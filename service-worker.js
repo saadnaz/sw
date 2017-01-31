@@ -6,7 +6,8 @@ var CACHE_NAME = 'my-site-cache-v1';
 var urlsToCache = [
         'app.js',
         'https://fonts.googleapis.com/css?family=Bungee+Shade',
-        'https://api.nasa.gov/planetary/apod?api_key=NNKOjkoul8n1CH18TWA9gwngW1s1SmjESPjNoUFo'
+        'https://api.nasa.gov/planetary/apod?api_key=NNKOjkoul8n1CH18TWA9gwngW1s1SmjESPjNoUFo',
+        'https://apod.nasa.gov/apod/image/1701/EclipseClouds_MODISanderson_1080.jpg'
 ];
 
 
@@ -64,7 +65,7 @@ self.addEventListener('fetch', function(event) {
                 // once by cache and once by the browser for fetch, we need
                 // to clone the response.
                 var fetchRequest = event.request.clone();
-                console.log('REQUEST : ',fetchRequest);
+             //   console.log('REQUEST : ',fetchRequest);
 
                 return fetch(fetchRequest)
                     .then(

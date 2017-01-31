@@ -178,7 +178,7 @@ var get = function(url)
 
     .then(function(response){
         //console.log("success",response);
-        console.log("Image found");
+        console.log("got image from nasa");
         var secureUrl = response.url.replace('http://','https://');
         document.getElementsByClassName('targetImage')[0].src=secureUrl;
     })
