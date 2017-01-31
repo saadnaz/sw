@@ -6,8 +6,7 @@ var CACHE_NAME = 'my-site-cache-v1';
 var urlsToCache = [
         'app.js',
         'https://fonts.googleapis.com/css?family=Bungee+Shade',
-        'https://api.nasa.gov/planetary/apod?api_key=NNKOjkoul8n1CH18TWA9gwngW1s1SmjESPjNoUFo',
-        'https://apod.nasa.gov/apod/image/1701/EclipseClouds_MODISanderson_1080.jpg'
+        'https://api.nasa.gov/planetary/apod?api_key=NNKOjkoul8n1CH18TWA9gwngW1s1SmjESPjNoUFo'
 ];
 
 
