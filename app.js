@@ -178,8 +178,9 @@ var get = function(url)
 
     .then(function(response){
         //console.log("success",response);
-        console.log("success");
-        document.getElementsByClassName('targetImage')[0].src=response.url.replace('http','https');
+        console.log("Image found");
+        var secureUrl = response.url.replace('http://','https://');
+        document.getElementsByClassName('targetImage')[0].src=secureUrl;
     })
     .catch (function(err){
      console.log("Error",err)  ;
