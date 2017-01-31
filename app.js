@@ -174,16 +174,16 @@ var get = function(url)
 
 
 
-    get('https://api.nasa.gov/planetary/apod?api_key=NNKOjkoul8n1CH18TWA9gwngW1s1SmjESPjNoUFo')
-
-    .then(function(response){
-        //console.log("success",response);
-        console.log("got image from nasa");
-        var secureUrl = response.url.replace('http://','https://');
-        document.getElementsByClassName('targetImage')[0].src=secureUrl;
-    })
-    .catch (function(err){
-     console.log("Error",err)  ;
-    });
+    // get('https://api.nasa.gov/planetary/apod?api_key=NNKOjkoul8n1CH18TWA9gwngW1s1SmjESPjNoUFo')
+    //
+    // .then(function(response){
+    //     //console.log("success",response);
+    //     console.log("got image from nasa");
+    //     var secureUrl = response.url;//.replace('http://','https://');
+    //     document.getElementsByClassName('targetImage')[0].src=secureUrl;
+    // })
+    // .catch (function(err){
+    //  console.log("Error",err)  ;
+    // });
 
 
