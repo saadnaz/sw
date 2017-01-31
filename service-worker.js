@@ -64,7 +64,7 @@ self.addEventListener('fetch', function(event) {
                 // once by cache and once by the browser for fetch, we need
                 // to clone the response.
                 var fetchRequest = event.request.clone();
-                console.log('REQUEST : '+fetchRequest);
+                console.log('REQUEST : ',fetchRequest);
 
                 return fetch(fetchRequest)
                     .then(
