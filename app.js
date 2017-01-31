@@ -179,7 +179,7 @@ var get = function(url)
     .then(function(response){
         //console.log("success",response);
         console.log("success");
-        document.getElementsByClassName('targetImage')[0].src=response.url;
+        document.getElementsByClassName('targetImage')[0].src=response.url.replace('http','https');
     })
     .catch (function(err){
      console.log("Error",err)  ;
